@@ -28,9 +28,9 @@ nav ul {
 	border-color: red;
 	border-radius: 10px;
 	border-width: 1px;
-	padding: 10px;
+	padding: 0.5em;
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
 	
 }
 nav ul li {
@@ -172,16 +172,36 @@ table {
 }
 #rose {
 	width: 40%;
-	border-radius: 10px;
+	border-radius: 40px;
 	animation-name: myFirstAnimation;
 	animation-duration: 3s;
 	animation-iteration-count: 1;
 }
-
-
-
-
-
+@media all and (min-width:900px) {
+	nav ul {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+figure {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.sideNoteStyle {
+	border: dotted 1px DeepSkyBlue;
+	background-color: #B22222;
+	padding: 0.5em;
+	margin: 0.5em;
+}
+.warnorange {
+	background-color: #BDB76B;
+}
+.warnred {
+	color: #DDA143C;
+	font-size: larger;
+}
 
 
 
