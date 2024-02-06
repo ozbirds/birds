@@ -29,11 +29,12 @@ nav ul {
 	border-radius: 10px;
 	border-width: 1px;
 	padding: 10px;
+	display: flex;
+	justify-content: space-around;
 	
 }
 nav ul li {
 	list-style-type: none;
-	display: inline;
 	color: #3333ff;
 	margn-right: 20px;
 	margn-left: 20px;
@@ -169,7 +170,13 @@ table {
 .card:hover {
 	border-color: #FF0000;
 }
-
+#rose {
+	width: 40%;
+	border-radius: 10px;
+	animation-name: myFirstAnimation;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+}
 
 
 
