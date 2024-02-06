@@ -43,6 +43,9 @@ nav ul li a {
 }
 img {
 	border: 2px solid MediumSlateBlue;
+	animation-name: myFirstAnimation;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
 }
 img:hover {
 	border: 2px dotted GreenYellow;
@@ -71,28 +74,47 @@ table {
 	color: #191970;
 	animation-name: glow;
 	animation-duration: 3s;
-	animation-iteration-count: 1000000000000000000000000000000000000000000099999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+	animation-iteration-count: 1000;
 }
 #cock {
 	width: 40%;
 	border-radius: 10%;
-	animation-name: myFirstAnimation;
-	animation-duration: 2s;
+	
+}
+#cock:hover {
+	animation-name: rollover;
+	animation-duration: 3s;
 	animation-iteration-count: 1;
 }
-#ro {
+	#ro {
 	width: 40%;
 	border-radius: 10%;
-	animation-name: myFirstAnimation;
+	
+}
+
+
+#ro:hover {
+	animation-name: rollover;
 	animation-duration: 3s;
 	animation-iteration-count: 1;
 }
 #gang {
 	width: 40%;
 	border-radius: 10%;
-	animation-name: myFirstAnimation;
-	animation-duration: 4s;
+	
+}
+#gang:hover {
+	animation-name: rollover;
+	animation-duration: 3s;
 	animation-iteration-count: 1;
+}
+@keyframes rollover {
+	0% {
+	  transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(-360deg);
+	}
 }
 @keyframes myFirstAnimation {
 	from {
