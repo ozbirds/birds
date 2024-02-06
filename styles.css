@@ -1,0 +1,162 @@
+body {
+  background-color: #000099;
+}
+body {
+	background:  #000099;
+	font-family: "Helvetica", sans-serif;
+	background: linear-gradient(#00008B, #B0E0E6, #98FB98, #2E8B57);
+}
+h1 {
+	color: orange;
+	font-family: "Times New Roman", serif;
+}	
+h4 {
+	color: Lime;
+	font-family: "Arial", sans-serif;
+}
+ol {
+	color: Magenta;
+	font-family "Arial", sans-serif;
+}
+a {
+	color: #800000;
+	font-family "Arial", sans-serif;
+}
+nav ul {
+	background-color: #006622;
+	border-style: solid;
+	border-color: red;
+	border-radius: 10px;
+	border-width: 1px;
+	padding: 10px;
+	
+}
+nav ul li {
+	list-style-type: none;
+	display: inline;
+	color: #3333ff;
+	margn-right: 20px;
+	margn-left: 20px;
+}
+nav ul li a {
+	text-decorration: none;
+}
+img {
+	border: 2px solid MediumSlateBlue;
+}
+img:hover {
+	border: 2px dotted GreenYellow;
+}
+table {
+	border-radius: 10px;
+}
+}
+#myCoolText {
+	color: #8B0000;
+	border: 2px ridge #8B008B;
+	padding: 15px;
+	text-align: center;
+	animation-name: glow;
+	animation-duration: 3s;
+	animation-iteration-count: 1000000000000000000000000000000000000000000000999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+}
+
+#poo {
+	color: #C71585;
+	animation-name: glow;
+	animation-duration: 3s;
+	animation-iteration-count: 1000000000000000000000000000000000000000000009999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+}
+#poo2 {
+	color: #191970;
+	animation-name: glow;
+	animation-duration: 3s;
+	animation-iteration-count: 1000000000000000000000000000000000000000000099999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+}
+#cock {
+	width: 40%;
+	border-radius: 10%;
+	animation-name: myFirstAnimation;
+	animation-duration: 2s;
+	animation-iteration-count: 1;
+}
+#ro {
+	width: 40%;
+	border-radius: 10%;
+	animation-name: myFirstAnimation;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+}
+#gang {
+	width: 40%;
+	border-radius: 10%;
+	animation-name: myFirstAnimation;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+}
+@keyframes myFirstAnimation {
+	from {
+		width: 100px;
+	}
+	to {
+		width: 300px;
+	}
+}
+@keyframes glow {
+	0% {
+		color: #800080;
+	}
+	50% {
+		color: #B8860B;
+	}
+	100% {
+		color: #6495ED;
+	}
+}
+@keyframes slide {
+	0% {
+		background-position-x: 0;
+	}
+	100% {
+		background-position-x: 600vw
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************
+This section is for styling tables
+***********************************/
+table, th, td {
+  border: 1px solid HoneyDew;
+  border-collapse: collapse;
+}
+tr {
+  background-color: PaleTurquoise;
+}
+th, td {
+  vertical-align: top;
+  padding: 5px;
+  text-align: left;
+}
+th {
+  color: purple;
+}
+td {
+  color: purple;
+}
+/********************************/
