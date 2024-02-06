@@ -43,9 +43,8 @@ nav ul li a {
 }
 img {
 	border: 2px solid MediumSlateBlue;
-	animation-name: myFirstAnimation;
-	animation-duration: 3s;
-	animation-iteration-count: 1;
+
+	
 }
 img:hover {
 	border: 2px dotted GreenYellow;
@@ -61,7 +60,7 @@ table {
 	text-align: center;
 	animation-name: glow;
 	animation-duration: 3s;
-	animation-iteration-count: 1000000000000000000000000000000000000000000000999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+	animation-iteration-count: 1000;
 }
 
 #poo {
@@ -85,6 +84,7 @@ table {
 	animation-name: rollover;
 	animation-duration: 3s;
 	animation-iteration-count: 1;
+	
 }
 	#ro {
 	width: 40%;
@@ -97,6 +97,7 @@ table {
 	animation-name: rollover;
 	animation-duration: 3s;
 	animation-iteration-count: 1;
+	
 }
 #gang {
 	width: 40%;
@@ -107,6 +108,7 @@ table {
 	animation-name: rollover;
 	animation-duration: 3s;
 	animation-iteration-count: 1;
+	
 }
 @keyframes rollover {
 	0% {
@@ -129,10 +131,10 @@ table {
 		color: #800080;
 	}
 	50% {
-		color: #B8860B;
+		color: #C0C0C0 ;
 	}
 	100% {
-		color: #6495ED;
+		color: #DC143C;
 	}
 }
 @keyframes slide {
@@ -150,9 +152,23 @@ table {
 .niceLinks:hover{
 	color: #7FFF00
 }
-
-
-
+.tinyPicture {
+	height: 60px;
+	border-radius: 10px;
+}
+.card {
+	width: 200px;
+	height: 200px;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 10px;
+	margin-top: 10px;
+	font-family: "Trebuchet MS", sans-serif;
+}
+.card:hover {
+	border-color: #FF0000;
+}
 
 
 
