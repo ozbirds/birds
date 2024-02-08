@@ -96,7 +96,7 @@ table {
 
 #ro:hover {
 	animation-name: rollover;
-	animation-duration: 3s;
+	animation-duration: 1s;
 	animation-iteration-count: 1;
 	
 }
@@ -107,7 +107,7 @@ table {
 }
 #gang:hover {
 	animation-name: rollover;
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-iteration-count: 1;
 	
 }
