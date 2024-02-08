@@ -176,6 +176,7 @@ table {
 	animation-name: myFirstAnimation;
 	animation-duration: 3s;
 	animation-iteration-count: 1;
+	z-index: 7;
 }
 @media all and (min-width:900px) {
 	nav ul {
@@ -202,14 +203,64 @@ figure {
 	color: #DDA143C;
 	font-size: larger;
 }
-
-
-
-
-
-
-
-
+.myPageLayoutGrid {
+	display: grid;
+	grid-column-gap: 0.5em;
+	grid-row-gap: 1em;
+	grid-template-rows: auto;
+	grid-template-columns: 100fr 100fr;
+	grid-template-areas:
+	"egAside1"
+	"egAside2";
+}
+.myGridArticle {
+	grid-area: egArticle;
+}
+.myGridAside1 {
+	grid-area: egAside1;
+}
+.myGridAside2 {
+	grid-area: egAside2;
+}
+.ABS {
+	position: absolute;
+}
+.relpos {
+	position: relative;
+}
+#tong {
+	width: 800px;
+	height: 400px;
+}
+#po {
+	right: 0px;
+	bottom: 70px;
+	height: 100px;
+	width: 100px;
+}
+#to {
+	left: 300px;
+	top: 10px;
+	width: 99px;
+}
+#go {
+	right: 10px;
+	top: 20px;
+	width: 300px;
+	z-index: 7;
+}
+#og {
+	left: 20px;
+	bottom: 10px;
+	width: 400px;
+	border-radius: 10px
+	z-index: 10;
+}
+#ton {
+	width: 300px;
+	left: 500px;
+	z-index: 6;
+}
 
 
 
