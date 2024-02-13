@@ -97,6 +97,7 @@ table {
 	animation-name: rollover;
 	animation-duration: 2s;
 	animation-iteration-count: infinite;
+	animation-direction: alternate;
 	
 }
 	#ro {
@@ -110,6 +111,7 @@ table {
 	animation-name: rollover;
 	animation-duration: 1s;
 	animation-iteration-count: infinite;
+	animation-direction: alternate;
 	
 }
 #gang {
@@ -121,6 +123,7 @@ table {
 	animation-name: rollover;
 	animation-duration: 3s;
 	animation-iteration-count: infinite;
+	animation-direction: alternate;
 	
 }
 @keyframes rollover {
@@ -287,10 +290,19 @@ div {
   animation-name: example;
   animation-duration: 4s;
 }
-
-
-
-
+#pot:hover {
+	transform: rotateY(360deg);
+}
+div {
+	width: 100px;
+	height: 100px;
+	background: red;
+	transition: width 2s, height 2s, transform 2s;
+	transition-delay: 0.1s;
+}
+div:hover {
+	width: 300px;
+}
 
 
 
