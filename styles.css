@@ -321,6 +321,9 @@ div:hover {
 	75%  {background-color:green; left:0px; top:200px;}
 	100% {background-color:GoldenRod; left:0px; top:0px;}
 }
+.invert {filter: invert(100%);}
+.shadow {filter: drop-shadow(8px 8px 10px DarkGoldenrod, 10px 10px 8px Red insert);}
+.saturate {filter: saturate(7);}
 div {
   width: 100px;
   height: 100px;
@@ -349,13 +352,62 @@ div {
  
   position: absolute;
   z-index: 1;
+ 
 }
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
 
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
 
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+img:hover {
+  transform: scaleX(-1);
 
 
 
