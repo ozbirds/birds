@@ -103,6 +103,7 @@ table {
 	animation-direction: alternate;
 	animation-timing-function: ease-out;
 	animation-delay: 0.5s;
+	border-radius: 20px 25px 30px 35px;
 	
 }
 	#ro {
@@ -119,6 +120,7 @@ table {
 	animation-direction: alternate;
 	animation-timing-function: linear;
 	animation-delay: 0.5s;
+	border-radius: 15px 20px 25px 30px;
 }
 #gang {
 	width: 40%;
@@ -132,14 +134,17 @@ table {
 	animation-direction: alternate;
 	animation-timing-function: ease-in;
 	animation-delay: 0.5s;
+	border-radius: 10px 15px 20px 25px;
 	
 }
 @keyframes rollover {
 	0% {
 	  transform: rotate(0deg);
+	  box-shadow: 10px 10px 3px DarkRed;
 	}
 	100% {
 		transform: rotate(-360deg);
+		box-shadow: 20px 20px 10px Grey;
 	}
 }
 @keyframes myFirstAnimation {
@@ -153,12 +158,15 @@ table {
 @keyframes glow {
 	0% {
 		color: #800080;
+		text-shadow: 20px 20px 10px Chartreuse;
 	}
 	50% {
 		color: #C0C0C0 ;
+		text-shadow: 10px 10px 3px LightSkyBlue;
 	}
 	100% {
 		color: #DC143C;
+		text-shadow: 2px 2px GoldenRod;
 	}
 }
 @keyframes slide {
@@ -198,7 +206,6 @@ table {
 }
 #rose {
 	width: 40%;
-	border-radius: 40px;
 	animation-name: myFirstAnimation;
 	animation-duration: 3s;
 	animation-iteration-count: 2;
@@ -206,6 +213,7 @@ table {
 	animation-timing-function: ease;
 	animation-direction: alternate;
 	z-index: 7;
+	border-radius: 40px;
 }
 @media all and (min-width:900px) {
 	nav ul {
@@ -497,6 +505,37 @@ img:hover {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+div {
+  border: 2px dotted SpringGreen;
+  padding: 20px; 
+  width: 300px;
+  resize: both;
+  overflow: auto;
+}
+div:hover {
+	border: 5px solid Red;
+	border-radius: 100%;
+}
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.button {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {opacity: 1}
 .button {
   position: relative;
   background-color: #04AA6D;
@@ -531,18 +570,19 @@ img:hover {
   opacity: 1;
   transition: 0s
 }
-div {
-  border: 2px solid;
-  padding: 20px; 
-  width: 300px;
-  resize: horizontal;
-  overflow: auto;
+.box {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #00ab55;
+    animation: moveit 3s infinite alternate linear;
+	animation-delay: 10s;
 }
 
-
-
-
-
+@keyframes moveit {
+    from {left: 0;}
+    to {left: 250px;}
+}
 
 
 
