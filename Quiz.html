@@ -9,15 +9,22 @@
 	<h1>Smash bros quiz</h1>
 	<h1>Tell me!</h1>
 	<label><h1>Do you play super smash bros ultimate?</h1></label>
-	<h1>YES<input type="radio" name="yn"></h1>
+	<h1>YES<input type="radio" name="yn" id="yesbutton"></h1>
 	<h1>NO<input type="radio" name="yn"></h1>
-	<input type="submit" value="Submit">
 	<br></br>
 	<label><h1>when did you start playing super smash bros?</h1></label>
 	 <input type="date" id="birthday" name="birthday">
 	 I don't remember<input type="radio" name="idr">
-	 <input type="submit" value="Submit">
 	 <br></br>
+	 <h1><form action="/action_page.php" method="get">
+  <label for="vol">what volume do you play super smash bros with mostly (between 0 and 50:</label>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+</form>
+</h1>
 	<a href="index.html">home</a>
 	<img src="1.jpg" alt="smash" id="i" />
+	<script>
+	var x = document.getElementById("birthday");
+	console.log(x);
+</script>
 </html>
