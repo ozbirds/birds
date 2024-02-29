@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Super smash bros Quiz</title>
+		<title>Super smash bros Quiz</title><a href="index.html">home</a>
 		<link rel="icon" type="image/x-icon" href="i.jpg" width="2px" hight="2px" />
-		<link type="text/css" rel="stylesheet" href="styles.css"/>
+		<link type="text/css" rel="stylesheet" href="stylesQuiz.css"/>
 		<meta charset="utf-8"/>
 		</head>
 	<h1>Smash bros quiz</h1>
 	<h1>Tell me!</h1>
 	<label><h1>Do you play super smash bros ultimate?</h1></label>
-	<h1>YES<input type="radio" name="yn" id="yesbutton"></h1>
-	<h1>NO<input type="radio" name="yn"></h1>
+	<h1>YES<input type="radio" name="yn" id="yesbutton" onclick="yesFunc()"></h1>
+	<h1>NO<input type="radio" name="yn" id="nobutton" onclick="noFunc()"></h1>
 	<br></br>
-	<label><h1>when did you start playing super smash bros?</h1></label>
-	 <input type="date" id="birthday" name="birthday">
-	 I don't remember<input type="radio" name="idr">
-	 <br></br>
-	 <h1><form action="/action_page.php" method="get">
-  <label for="vol">what volume do you play super smash bros with mostly (between 0 and 50:</label>
-  <input type="range" id="vol" name="vol" min="0" max="50">
-</form>
+	<div id= "questions">
+			<label><h1>when did you start playing super smash bros?</h1></label>
+			 <input type="date" id="birthday" name="birthday">
+			 I don't remember<input type="radio" name="idr">
+			 <br></br>
+			 <h1><form>
+		  <label for="vol">what volume do you play super smash bros with mostly (between 0 and 50:</label>
+		  <input type="range" id="vol" name="vol" min="0" max="50">
+		</form>
+	
 </h1>
-	<a href="index.html">home</a>
+	
 	<img src="1.jpg" alt="smash" id="i" />
+	</div>
 	<script>
-	var x = document.getElementById("birthday");
-	console.log(x);
+	function yesFunc(){
+		console.log("YES")
+		var questions = document.getElementById("questions");
+		questions.style.display = "block";
+	}
+	
+	function noFunc(){
+		console.log("NO")
+		var questions = document.getElementById("questions");
+		questions.style.display = "none";
+	}
 </script>
 </html>

@@ -299,48 +299,41 @@ figure {
 }
 
 /* The element to apply the animation to */
-div {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  background-color: red;
+/* div { */
+  /* width: 100px; */
+  /* height: 100px; */
+  /* position: relative; */
+  /* background-color: red; */
   /* animation-name: ooo; */
   /* animation-duration: 4s; */
-}
+/* } */
 #pot:hover {
 	transform: rotateY(360deg);
 }
-div {
-	width: 100px;
-	height: 100px;
-	background: red;
-	/* transition: width 2s, height 2s, transform 2s; */
-	/* transition-delay: 0.1s; */
-}
 div:hover {
-	width: 300px;
+	box-shadow: 10px, 10px, 3px, GoldenRod, 20px, 20px, 20px, GreenYellow;
 }
-@keyframes ooo {
-	0% {background-color:GoldenRod; left:0px; top:0px;}
-	25% {background-color:LightSkyBlue; left:200px; top:0px;}
-	50%  {background-color:blue; left:200px; top:200px;}
-	75%  {background-color:green; left:0px; top:200px;}
-	100% {background-color:GoldenRod; left:0px; top:0px;}
-}
+/* @keyframes ooo { */
+	/* 0% {background-color:GoldenRod; left:0px; top:0px;} */
+	/* 25% {background-color:LightSkyBlue; left:200px; top:0px;} */
+	/* 50%  {background-color:blue; left:200px; top:200px;} */
+	/* 75%  {background-color:green; left:0px; top:200px;} */
+	/* 100% {background-color:GoldenRod; left:0px; top:0px;} */
+/* } */
 .invert {filter: invert(100%);}
 .shadow {filter: drop-shadow(8px 8px 10px DarkGoldenrod, 10px 10px 8px Red insert);}
 .saturate {filter: saturate(7);}
 div {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+  width: 100%;
+  height: 50%;
+  background-color: DarkGoldenrod;
   position: relative;
-  animation-name: ooo;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-delay: 5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  /* animation-name: ooo; */
+  /* animation-duration: 5s; */
+  /* animation-timing-function: linear; */
+  /* animation-delay: 5s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
 }
 .tooltip {
   position: relative;
@@ -510,9 +503,6 @@ div {
   resize: both;
   overflow: auto;
 }
-div:hover {
-	border: 5px solid Red;
-	border-radius: 100%;
 }
 .disabled {
   opacity: 0.6;
