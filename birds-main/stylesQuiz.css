@@ -1,0 +1,746 @@
+body {
+  background-color: #000099;
+}
+body {
+	background:  #000099;
+	font-family: "Helvetica", sans-serif;
+	background: linear-gradient(to right, #00008B, #B0E0E6, #98FB98, #2E8B57);
+}
+@keyframes stat {
+	from {background-color: linear-gradient(#00008B, #B0E0E6, #98FB98, #2E8B57)};
+	to {background-color: linear-gradient(#2E8B57, #98FB98, #B0E0E6, #00008B)}
+}
+h1 {
+	color: orange;
+	font-family: "Times New Roman", serif;
+}	
+h4 {
+	color: Lime;
+	font-family: "Arial", sans-serif;
+}
+h4:hover {
+	text-shadow: 0 0 3px black, 00 5px DarkBlue;
+}
+ol {
+	color: Magenta;
+	font-family "Arial", sans-serif;
+}
+a {
+	color: linear-gradient(#2E8B57, #98FB98, #B0E0E6, #00008B)};
+	font-family "Arial", sans-serif;
+}
+nav ul {
+	background-color: #006622;
+	border-style: solid;
+	border-color: red;
+	border-radius: 10px;
+	border-width: 1px;
+	padding: 0.5em;
+	display: flex;
+	flex-direction: column;
+	
+}
+nav ul li {
+	list-style-type: none;
+	color: #3333ff;
+	margn-right: 20px;
+	margn-left: 20px;
+}
+nav ul li a {
+	text-decorration: none;
+}
+img {
+	border: 2px solid MediumSlateBlue;
+
+	
+}
+img:hover {
+	border: 2px dotted GreenYellow;
+}
+table {
+	border-radius: 10px;
+}
+}
+#myCoolText {
+	color: #8B0000;
+	border: 2px ridge #8B008B;
+	padding: 15px;
+	text-align: center;
+	animation-name: glow;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-delay: 0.5s;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+}
+
+#poo {
+	color: #C71585;
+	animation-name: glow;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+#poo2 {
+	color: #191970;
+	animation-name: glow;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+#poo2:hover {
+	animation-name: stat;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+#cock {
+	width: 40%;
+	border-radius: 10%;
+	
+}
+#cock:hover {
+	animation-name: rollover;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-out;
+	animation-delay: 0.5s;
+	border-radius: 20px 25px 30px 35px;
+	
+}
+	#ro {
+	width: 40%;
+	border-radius: 10%;
+	
+}
+
+
+#ro:hover {
+	animation-name: rollover;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+	animation-delay: 0.5s;
+	border-radius: 15px 20px 25px 30px;
+}
+#gang {
+	width: 40%;
+	border-radius: 10%;
+	
+}
+#gang:hover {
+	animation-name: rollover;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in;
+	animation-delay: 0.5s;
+	border-radius: 10px 15px 20px 25px;
+	
+}
+@keyframes rollover {
+	0% {
+	  transform: rotate(0deg);
+	  box-shadow: 10px 10px 3px DarkRed;
+	}
+	100% {
+		transform: rotate(-360deg);
+		box-shadow: 20px 20px 10px Grey;
+	}
+}
+@keyframes myFirstAnimation {
+	from {
+		width: 100px;
+	}
+	to {
+		width: 300px;
+	}
+}
+@keyframes glow {
+	0% {
+		color: #800080;
+		text-shadow: 20px 20px 10px Chartreuse;
+	}
+	50% {
+		color: #C0C0C0 ;
+		text-shadow: 10px 10px 3px LightSkyBlue;
+	}
+	100% {
+		color: #DC143C;
+		text-shadow: 2px 2px GoldenRod;
+	}
+}
+@keyframes slide {
+	0% {
+		background-position-x: 0;
+	}
+	100% {
+		background-position-x: 600vw
+	}
+}
+.niceLinks {
+	text-decoration: none;
+	color: #7B68EE;
+}
+.niceLinks:hover{
+	color: #7FFF00
+}
+.tinyPicture {
+	height: 60px;
+	border-radius: 10px;
+}
+.card {
+	width: 200px;
+	height: 200px;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 10px;
+	margin-top: 10px;
+	font-family: "Trebuchet MS", sans-serif;
+}
+.card:hover {
+	border-color: #00FF00;
+	box-shadow: 5px 5px 3px White, 10px 10px 5px 12px DarkSeaGreen, 15px 15px 10px Black, 10px 10px 5px LightBlue inset;
+}
+#rose {
+	width: 40%;
+	animation-name: myFirstAnimation;
+	animation-duration: 3s;
+	animation-iteration-count: 2;
+	animation-delay: 0.5s;
+	animation-timing-function: ease;
+	animation-direction: alternate;
+	z-index: 7;
+	border-radius: 40px;
+}
+@media all and (min-width:900px) {
+	nav ul {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+}
+figure {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+.sideNoteStyle {
+	border: dotted 1px DeepSkyBlue;
+	background-color: #B22222;
+	padding: 0.5em;
+	margin: 0.5em;
+}
+.warnorange {
+	background-color: #BDB76B;
+}
+.warnred {
+	color: #DDA143C;
+	font-size: larger;
+}
+.myPageLayoutGrid {
+	display: grid;
+	grid-column-gap: 0.5em;
+	grid-row-gap: 1em;
+	grid-template-rows: auto;
+	grid-template-columns: 100fr 100fr;
+	grid-template-areas:
+	"egAside1"
+	"egAside2";
+}
+.myGridArticle {
+	grid-area: egArticle;
+}
+.myGridAside1 {
+	grid-area: egAside1;
+}
+.myGridAside2 {
+	grid-area: egAside2;
+}
+.ABS {
+	position: absolute;
+}
+.relpos {
+	position: relative;
+}
+#tong {
+	width: 800px;
+	height: 400px;
+}
+#po {
+	right: 0px;
+	bottom: 70px;
+	height: 100px;
+	width: 100px;
+}
+#to {
+	left: 300px;
+	top: 10px;
+	width: 99px;
+}
+#go {
+	right: 10px;
+	top: 20px;
+	width: 300px;
+	z-index: 7;
+}
+#og {
+	left: 20px;
+	bottom: 10px;
+	width: 400px;
+	border-radius: 10px
+	z-index: 10;
+}
+#ton {
+	width: 300px;
+	left: 500px;
+	z-index: 6;
+}
+}
+
+/* The element to apply the animation to */
+/* div { */
+  /* width: 100px; */
+  /* height: 100px; */
+  /* position: relative; */
+  /* background-color: red; */
+  /* animation-name: ooo; */
+  /* animation-duration: 4s; */
+/* } */
+#pot:hover {
+	transform: rotateY(360deg);
+}
+div:hover {
+	box-shadow: 10px, 10px, 3px, GoldenRod, 20px, 20px, 20px, GreenYellow;
+}
+/* @keyframes ooo { */
+	/* 0% {background-color:GoldenRod; left:0px; top:0px;} */
+	/* 25% {background-color:LightSkyBlue; left:200px; top:0px;} */
+	/* 50%  {background-color:blue; left:200px; top:200px;} */
+	/* 75%  {background-color:green; left:0px; top:200px;} */
+	/* 100% {background-color:GoldenRod; left:0px; top:0px;} */
+/* } */
+.invert {filter: invert(100%);}
+.shadow {filter: drop-shadow(8px 8px 10px DarkGoldenrod, 10px 10px 8px Red insert);}
+.saturate {filter: saturate(7);}
+div {
+  width: 100%;
+  height: 50%;
+  background-color: DarkGoldenrod;
+  position: relative;
+  /* animation-name: ooo; */
+  /* animation-duration: 5s; */
+  /* animation-timing-function: linear; */
+  /* animation-delay: 5s; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate; */
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  position: absolute;
+  z-index: 1;
+ 
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+img:hover {
+  transform: scaleX(-1);
+}
+#tot {
+}
+.mask1 {
+  -webkit-mask-image: url(n.jpg);
+  mask-image: url(w3logo.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;    
+}
+.button {
+  background-color: #006622;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 16px;
+  border-radius: 100%;
+  transition-duration: 0.4s;
+}
+.button:hover {
+	background-color: white;
+	color: white;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.button2 {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button3 {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+div {
+  border: 2px dotted SpringGreen;
+  padding: 20px; 
+  width: 300px;
+  resize: both;
+  overflow: auto;
+}
+}
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.button {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {opacity: 1}
+.button {
+  position: relative;
+  background-color: #04AA6D;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+.box {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #00ab55;
+    animation: moveit 3s infinite alternate linear;
+	animation-delay: 10s;
+}
+
+@keyframes moveit {
+    from {left: 0;}
+    to {left: 250px;}
+}
+.ub {
+  background: #2db34a;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 95px;
+  line-height: 95px;
+  text-align: center;
+  transition-property: background, border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  width: 95px;
+}
+.ub:hover {
+  background: #6A5ACD;
+  border-radius: 50%;
+}
+.card-container {
+  height: 150px;
+  perspective: 600;
+  position: relative;
+  width: 150px;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.card .back {
+  transform: rotateY(180deg);
+}
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 244px;
+    top: 100px;
+  }
+  100% {
+    left: 488px;
+    top: 0;
+  }
+}
+#c {
+	border-radius: 100%;
+	animation-name: slide;
+	animation-iteration-count: infinite;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	animation-direction: reverse-alternate;
+	animation-timing-function: linear;
+}
+#i {
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	border-bottom: 5px dashed Lime;
+	border-left: 1px solid DarkBlue;
+	border-right: 10px dotted DarkGoldenrod;
+	border-top: 3px solid red;
+	animation-name: rollover;
+	animation-duration: 1s;
+	animation-delay: 3s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+#m {
+	color: LightSkyBlue;
+}
+
+#questions{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************
+This section is for styling tables
+***********************************/
+table, th, td {
+  border: 1px solid HoneyDew;
+  border-collapse: collapse;
+}
+tr {
+  background-color: PaleTurquoise;
+}
+th, td {
+  vertical-align: top;
+  padding: 5px;
+  text-align: left;
+}
+th {
+  color: purple;
+}
+td {
+  color: purple;
+}
+/********************************/
